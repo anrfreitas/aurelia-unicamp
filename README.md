@@ -16,6 +16,12 @@ Desenvolver um cadastro de clientes por meio das tecnologias oferecidas na lingu
 - Extensão do model: 		.js
 - Extensão do view: 		.html
 
+## Instalando aurelia
+- $ sudo npm install aurelia-cli -g
+
+## Atualizando as dependências do projeto
+- $ npm install
+
 ## Bash commands
 - $ au new   <nome>					/* cria um novo projeto */
 - $ au build  --env prod				/* gerará compilação na pasta dist */
