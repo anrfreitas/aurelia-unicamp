@@ -18,6 +18,7 @@ Desenvolver um cadastro de clientes por meio das tecnologias oferecidas na lingu
 
 ## Instalando aurelia
 - $ sudo npm install aurelia-cli -g
+- $ sudo npm install serve -g /* servidor para executar o projeto quando necessario */
 
 ## Atualizando as dependências do projeto
 - $ npm install
