@@ -3,11 +3,13 @@ The structure of the project will be the following below:
 
 Classes
 - Pessoas
+- authSettings
 
 Components
 - header
 - home
 - lista
+- form
 
 Attributes
 - tabela
@@ -21,6 +23,7 @@ Value Converters
 Packages:
 - Aurelia Event Aggregator
 - Aurelia Router
+- Aurelia Validation
 
 Thank you!
 André Freitas

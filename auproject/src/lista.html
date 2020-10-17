@@ -18,9 +18,13 @@
       <tr repeat.for="item of Pessoas.getPessoas()">
         <td>${item.nome}</td>
         <td>${item.telefone | telefone}</td>
-        <td>${item.status ? 'Habilitado' : 'Desabilitado'}</td>
+        <td>${item.habilitado ? 'Habilitado' : 'Desabilitado'}</td>
         <td><button click.delegate="exibirInfoClickDelegate(`${item.nome}`)">Console Log Data</button></td>
       </tr>
     </tbody>
   </table>
+
+  <br /><br />
+  <button click.delegate="backToMenu()">Fechar</button>
+
 </template>

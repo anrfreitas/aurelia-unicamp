@@ -1,6 +1,7 @@
 import {EventAggregator} from 'aurelia-event-aggregator'
 import {PLATFORM, inject} from 'aurelia-framework'
 import {Router} from 'aurelia-router'
+import {AuthSettings} from './classes/authSettings'
 
 @inject(Router, EventAggregator)
 export class App {
@@ -16,9 +17,11 @@ export class App {
     })
   }
 
+  /* Lets go now add authentication methods to our project!! */
   configureRouter(config, router) {
     this.router = router
     config.title = "AUProject title"
+    config.addAuthorizeStep(AuthSettings)
     config.map([
       {
         route: ['', 'index', 'home'],
@@ -31,6 +34,13 @@ export class App {
         name: "listaRoute",
         moduleId: PLATFORM.moduleName("lista"),
         title: "Lista Title"
+      },
+      {
+        route: ['form'],
+        name: "formRoute",
+        moduleId: PLATFORM.moduleName("form"),
+        title: "Form Title",
+        settings: {auth: true}
       }
     ])
   }

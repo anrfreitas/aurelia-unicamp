@@ -11,7 +11,8 @@
     "aurelia-animator-css": "^1.0.4",
     "aurelia-bootstrapper": "^2.3.3",
     "aurelia-event-aggregator": "^1.0.3",
-    "aurelia-router": "^1.7.1"
+    "aurelia-router": "^1.7.1",
+    "aurelia-validation": "^2.0.0-rc2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

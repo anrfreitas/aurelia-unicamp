@@ -1,0 +1,29 @@
+<template>
+  <h1>${message}</h1>
+  <div>
+    <span>Nome: </span> <input type="text" value.bind="nome & validate"></input> <br /><br />
+    <span>Telefone: </span> <input type="text" value.bind="telefone"></input> <br /><br />
+
+    <span>Habilitado: </span>
+    <select value.bind="habilitado">
+      <option value='1' selected>habilitado</option>
+      <option value='0'>desabilitado</option>
+    </select>
+
+    <br /><br />
+    <button click.delegate="salvarPessoa()">Salvar</button>
+
+    <br /><br />
+    <button click.delegate="backToMenu()">Fechar</button>
+
+    <!-- Error tracking within Validation Rules and Controller Factory-->
+    <p>
+      <b>Errors:</b>
+      <ul if.bind="controller.errors">
+        <li repeat.for="error of controller.errors">
+          ${error.message}
+        </li>
+      </ul>
+    </p>
+  </div>
+</template>
