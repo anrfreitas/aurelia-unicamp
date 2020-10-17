@@ -1,0 +1,26 @@
+<template>
+  <h1>${message}</h1>
+
+  <require from="./resources/attributes/tabela"></require>
+  <require from="./resources/value-converters/telefone"></require>
+
+  <table border="1" style="width: 100%;" tabela>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Telefone</th>
+        <th>Status</th>
+        <th>FN</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr repeat.for="item of Pessoas.getPessoas()">
+        <td>${item.nome}</td>
+        <td>${item.telefone | telefone}</td>
+        <td>${item.status ? 'Habilitado' : 'Desabilitado'}</td>
+        <td><button click.delegate="exibirInfoClickDelegate(`${item.nome}`)">Console Log Data</button></td>
+      </tr>
+    </tbody>
+  </table>
+</template>

@@ -1,0 +1,26 @@
+Hello, in this lesson we are going to create an Aurelia Project called "auproject"!!
+The structure of the project will be the following below:
+
+Classes
+- Pessoas
+
+Components
+- header
+- home
+- lista
+
+Attributes
+- tabela
+
+Elements
+- footer
+
+Value Converters
+- telefone
+
+Packages:
+- Aurelia Event Aggregator
+- Aurelia Router
+
+Thank you!
+André Freitas

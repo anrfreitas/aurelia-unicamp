@@ -1,0 +1,13 @@
+<template>
+
+  <compose view-model="./header"></compose>
+  
+  <router-view></router-view>
+
+  <require from="./resources/elements/footer"></require>
+
+  <footer value="Footer Value">
+    <p>Slot value inside the element</p>
+  </footer>
+  
+</template>
