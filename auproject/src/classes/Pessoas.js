@@ -19,4 +19,8 @@ export class Pessoas {
         })
         return selecionado
     }
+
+    salvarPessoa = (nome, telefone, habilitado) => {
+        this.Pessoas.push({nome, telefone, habilitado})
+    }
 }

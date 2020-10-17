@@ -23,4 +23,8 @@ export class Lista {
   exibirInfoClickDelegate = (nome) => {
     this.ea.publish('printMSG', JSON.stringify(this.Pessoas.obterPessoa(nome)))
   }
+
+  backToMenu = () => {
+    this.router.navigate("")
+  }
 }
